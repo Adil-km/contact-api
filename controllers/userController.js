@@ -40,7 +40,7 @@ const registerUser = asyncHandler(async (req,res) => {
 });
 
 //@desc Login user
-//@route POST /api/users/register
+//@route POST /api/users/login
 //@access public
 const loginUser = asyncHandler(async (req,res) => {
     const { email, password} = req.body;
@@ -71,7 +71,7 @@ const loginUser = asyncHandler(async (req,res) => {
 });
 
 //@desc Current user info
-//@route GET /api/users/register
+//@route GET /api/users/current
 //@access private
 const currentUser = asyncHandler(async (req,res) => {
     
